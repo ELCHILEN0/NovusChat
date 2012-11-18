@@ -1,0 +1,6 @@
+format:
+  message: '{F}&r[{P}&r]{DN}&r:{S}{M}'
+  me: ''
+  msg: ''
+  tab: ''
+  list: ''
