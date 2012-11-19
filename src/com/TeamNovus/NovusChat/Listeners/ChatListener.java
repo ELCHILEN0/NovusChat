@@ -21,13 +21,13 @@ public class ChatListener implements Listener {
 			
 			if(!(e.isCancelled()) && !(event.isCancelled())) {
 				if(event.getPlayer().getName().equals(recipient.getName())) {
-					Bukkit.getServer().getConsoleSender().sendMessage(NovusChat.getChatManager().formatMessage(e.getSender(), e.getPlayer(), e.getMessage()));
+					Bukkit.getServer().getConsoleSender().sendMessage((NovusChat.getChatManager().parse(e)));
 				}
-				e.getPlayer().sendMessage(NovusChat.getChatManager().formatMessage(e.getSender(), e.getPlayer(), e.getMessage()));
+				
+				e.getPlayer().sendMessage(NovusChat.getChatManager().parse(e));
 			}
-			
-			event.getPlayer().setPlayerListName(NovusChat.getChatManager().formatMessage(event.getPlayer(), recipient, e.getMessage()));
 		}
+		
 		event.setCancelled(true);
 	}
 }
