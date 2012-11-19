@@ -10,6 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import com.TeamNovus.NovusChat.Formats.DefaultFormats;
 import com.TeamNovus.NovusChat.Listeners.ChatListener;
+import com.TeamNovus.NovusChat.Listeners.PlayerListener;
 import com.TeamNovus.NovusChat.Managers.ChatManager;
 
 public class NovusChat extends JavaPlugin {
@@ -28,6 +29,7 @@ public class NovusChat extends JavaPlugin {
 		reloadConfig();
 		
 		getServer().getPluginManager().registerEvents(new ChatListener(), this);
+		getServer().getPluginManager().registerEvents(new PlayerListener(), this);
 		
         RegisteredServiceProvider<Permission> permissionProvider = getServer().getServicesManager().getRegistration(Permission.class);
         RegisteredServiceProvider<Chat> chatProvider = getServer().getServicesManager().getRegistration(Chat.class);

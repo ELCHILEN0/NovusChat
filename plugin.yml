@@ -3,4 +3,4 @@ author: ELCHILEN0
 description: A simple chat plugin designed for NovusCraft!
 version: 1.0.0
 main: com.TeamNovus.NovusChat.NovusChat
-depend: [Vault]
+depend: [Vault, SupernaturalRaces]
