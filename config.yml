@@ -1,6 +1,8 @@
 format:
-  message: '{F}&r[{P}&r]{DN}&r:{S}{M}'
-  me: ''
-  msg: ''
-  tab: ''
-  list: ''
+  chat: '{F}&r[{P}&r]{DN}&r:{S}{M}'
+  tab-list: '{DN}'
+blacklist:
+  - 'poop'
+options:
+  max-caps: 15
+  max-caps-per-word: 5

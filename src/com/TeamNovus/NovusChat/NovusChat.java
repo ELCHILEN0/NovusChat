@@ -8,7 +8,6 @@ import net.milkbowl.vault.permission.Permission;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import com.TeamNovus.NovusChat.Formats.DefaultFormats;
 import com.TeamNovus.NovusChat.Listeners.ChatListener;
 import com.TeamNovus.NovusChat.Managers.ChatManager;
 
@@ -35,7 +34,6 @@ public class NovusChat extends JavaPlugin {
         chat = chatProvider.getProvider();
 		
 		chatManager = new ChatManager();
-		chatManager.registerClass(DefaultFormats.class);
 	}
 	
 	@Override
